@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Mcode</title>
+    <meta name="renderer" content="webkit">
+    <!-- Mcode自适应辅助代码，不用可删除，见：http://code.wiredmed.com/show.php?id=19&url=http://code.wiredmed.com/code/common/base/2016-04-08/19.html -->
+    <script>(function(){function a(){return/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)?!0:/(Android)/i.test(navigator.userAgent)?!0:!1}var d=document.getElementsByTagName("html")[0];var e;if(a()){window.isMobile=1;e="MC"}else{window.isMobile=0;e="PC"}d.className=d.className?d.className+" "+e:e;var b=d.className;function c(f){var h="";var g=document.documentElement.clientWidth;1600>g&&(h+=" lt1600");1400>g&&(h+=" lt1400");1200>g&&(h+=" lt1200");1000>g&&(h+=" lt1000");960>g&&(h+=" lt960");640>g&&(h+=" lt640");500>g&&(h+=" lt500");400>g&&(h+=" lt400");1600<g&&(h+=" gt1600");1400<g&&(h+=" gt1400");1200<g&&(h+=" gt1200");1000<g&&(h+=" gt1000");960<g&&(h+=" gt960");640<g&&(h+=" gt640");500<g&&(h+=" gt500");400<g&&(h+=" gt400");f.className=b+h}c(d);window.onresize=function(f){c(d)}})();</script>
+    <!--让IE9以下浏览器支持html5标签 -->
+    <!--[if lt IE 9]>
+    <script> (function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})() </script>
+    <![endif]-->
+    <!-- Mcode基础及扩展样式集合，正式使用应下载到本地 -->
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" href="css/extend.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="css/swiper2.7.6.min.css" rel="stylesheet">
+    <script src="js/jquery1.12.1.js"></script>
+    <script src="js/swiper2.7.6.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#box1').swiper({
+                loop: true,paginationClickable: true,
+                pagination: '#box1 .mj-pagination'
+                //其他设置
+            });
+        })
+    </script>
+</head>
+<body>
+<!--移动菜单-->
+
+<div class="yj-moblie pc-hide">
+    <i class="f-icon m-search">&#xe618;</i>
+    <i class="f-icon m-menu">&#xe614;</i>
+</div>
+
+<header>
+    <div class="yj-top mc-hide">
+        <div class="w-main f-bc f-cb">
+            <div class="f-fr">
+                <a class="yj-top-lang" href="#">中文</a>
+                <a class="yj-top-lang" href="#">Deutsch</a>
+                <a class="yj-top-lang" href="#">English</a>
+                <a class="yj-top-lang" href="#">française</a>
+                <a class="yj-top-lang" href="#">Italiano</a>
+                <a class="yj-top-lang-more" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-main f-bc f-cb f-mt10">
+        <div class="mj-logo g-w70 g-mw g-fl"><img src="img/logo.jpg" alt=""></div>
+        <div class="f-fr g-w30 g-mw mc-hide">
+            <div class="search-box">
+                <div class="f-cb mj-search-form f-f14">
+                    <form method="post" action="http://nysy.gzyuanri.com/core/search/index.php" >
+                        <input type="hidden" name="show" value="title">
+                        <input type="hidden" name="classid" value="8">
+                        <div class="g-w80 g-fl">
+                            <input title="" class="mj-search-form-input" placeholder="请输入关键字..." type="text" name="keyboard" />
+                        </div>
+                        <button type="submit" class="mj-search-form-btn g-fl g-w20">搜索</button>
+                    </form >
+                </div>
+                <p class="mj-search-hot f-f12 f-mt10"><b>热门搜索：</b><a href="#" target=_blank>医生</a><a href="#">烦人</a></p>
+            </div>
+        </div>
+    </div>
+    <nav class="mj-nav">
+        <div class="w-main f-bc f-cb">
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">关于我们</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">投资环境</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">新闻及活动</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">媒体库</a>
+            </div>
+
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">社会网络</a>
+            </div>
+
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">联系我们</a>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<div class="yj-pic-roll">
+    <div class="swiper-container mj-slideBox" id="box1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#" target="_blank" class="mj-slideBox-img" style="background:url(img/pic.jpg) center center no-repeat;">&nbsp;</a>
+            </div>
+            <div class="swiper-slide"> Slide2</div>
+            <div class="swiper-slide"> Slide3</div>
+        </div>
+        <div class="mj-pagination mj-slideBox-p2"></div>
+    </div>
+</div>
+
+<div class="yj-middle-up">
+    <div class="w-main f-bc f-cb">
+        <div class="g-w33 g-mw f-fl">
+            <div class="yj-news-box">
+                <div class="yj-news-box-head">
+                    <p class="yj-news-box-title">最新新闻</p>
+                    <a href="#"><p class="yj-news-box-more">&gt;</p></a>
+                </div>
+                <a href="#" class="mj-picList f-mt20">
+                    <div class="mj-picList-pic" style="background-image:url(http://www.superslide2.com/demo/images/pic1.jpg)">&nbsp;</div>
+                    <div class="mj-picList-info">
+                        <span class="mj-picList-b">加快修订等规章加快修订等规章加快修订等规章</span>
+                        <p class="mj-picList-p">加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章</p>
+                        <span class="mj-picList-time">2016/6/6</span>
+                    </div>
+                </a>
+                <a href="#" class="mj-picList f-mt20">
+                    <div class="mj-picList-pic" style="background-image:url(http://www.superslide2.com/demo/images/pic1.jpg)">&nbsp;</div>
+                    <div class="mj-picList-info">
+                        <span class="mj-picList-b">加快修订等规章加快修订等规章加快修订等规章</span>
+                        <p class="mj-picList-p">加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章</p>
+                        <span class="mj-picList-time">2016/6/6</span>
+                    </div>
+                </a>
+                <a href="#" class="mj-picList f-mt20">
+                    <div class="mj-picList-pic" style="background-image:url(http://www.superslide2.com/demo/images/pic1.jpg)">&nbsp;</div>
+                    <div class="mj-picList-info">
+                        <span class="mj-picList-b">加快修订等规章加快修订等规章加快修订等规章</span>
+                        <p class="mj-picList-p">加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章</p>
+                        <span class="mj-picList-time">2016/6/6</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="g-w66 g-mw f-fl">
+            <div class="yj-news-box">
+                <div class="yj-news-box-head">
+                    <p class="yj-news-box-title">园区活动</p>
+                    <a href="#"><p class="yj-news-box-more">&gt;</p></a>
+                </div>
+                <div class="g-w50 g-mw f-fl">
+                    <div class="yj-news-box2">
+                    <div class="yj-news-img" style="background-image: url(img/a1.jpg)"></div>
+                    <a href="#" class="mj-picList f-mt5">
+                        <div class="mj-picList-info-nopic">
+                            <span class="mj-picList-b">加快修订等规章加快修订等规章加快修订等规章</span>
+                            <p class="mj-picList-p">加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章</p>
+                            <span class="mj-picList-time">2016/6/6</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="g-w50 g-mw f-fl">
+                    <div class="yj-news-box2">
+                    <div class="yj-news-img" style="background-image: url(img/a2.jpg)"></div>
+                    <a href="#" class="mj-picList f-mt5">
+                        <div class="mj-picList-info-nopic">
+                            <span class="mj-picList-b">加快修订等规章加快修订等规章加快修订等规章</span>
+                            <p class="mj-picList-p">加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章加快修订《北京市社会抚养费征收管理办法》等规章</p>
+                            <span class="mj-picList-time">2016/6/6</span>
+                        </div>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="yj-middle-down">
+    <div class="w-main f-bc f-cb">
+    <div class="g-w33 g-mw f-fl">
+        <div class="yj-news-box-head">
+            <p class="yj-news-box-title">成功故事</p>
+            <a href="#"><p class="yj-news-box-more">&gt;</p></a>
+        </div>
+        <div class="yj-success-box">
+          <div class="yj-success-img f-m5" style="background-image: url(img/a3.jpg)">
+              <div class="yj-success-txt-back">  </div>
+            <span class="yj-success-b">丝丝姆纺织机械丝丝姆纺织机械</span>
+            <p class="yj-success-p">丝丝姆纺织机械丝丝姆纺织机械织机械丝丝姆纺织机械丝丝姆纺织机械丝丝姆丝姆纺织机械丝丝姆纺织机械丝丝姆丝姆纺织机械丝丝姆纺织机械丝丝姆纺织机械</p>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="g-w33 f-fl mc-hide">
+        <div class="f-pl20 f-pr20">
+        <div class="yj-news-box-head">
+            <p class="yj-news-box-title">留言板</p>
+            <a href="#"><p class="yj-news-box-more">&gt;</p></a>
+        </div>
+
+            <div class="yj-news-ly f-mb10">
+                <p> <span class="yj-news-ly-l">1</span><span>楼</span>&nbsp; &nbsp; <span class="yj-news-ly-name">曾**</span>&nbsp; &nbsp;  <span class="yj-news-ly-from">湖南</span>  </p>
+                    <p class="yj-news-ly-lab">留言：</p>
+                    <p class="yj-news-ly-txt">终于加入了中了中瑞工业园终于了中瑞工业园终于了中瑞工业园终于加入了中瑞工园终于加入了中瑞工业园终于加入了中瑞工业园</p>
+            </div>
+
+            <div class="yj-news-ly f-mb10">
+                <p> <span class="yj-news-ly-l">1</span><span>楼</span>&nbsp; &nbsp; <span class="yj-news-ly-name">曾**</span>&nbsp; &nbsp;  <span class="yj-news-ly-from">湖南</span>  </p>
+                <p class="yj-news-ly-lab">留言：</p>
+                <p class="yj-news-ly-txt">终于加入了中了中瑞工业园终于了中瑞工业园终于了中瑞工业园终于加入了中瑞工园终于加入了中瑞工业园终于加入了中瑞工业园</p>
+            </div>
+
+            <div class="yj-news-ly f-mb10">
+                <p> <span class="yj-news-ly-l">1</span><span>楼</span>&nbsp; &nbsp; <span class="yj-news-ly-name">曾**</span>&nbsp; &nbsp;  <span class="yj-news-ly-from">湖南</span>  </p>
+                <p class="yj-news-ly-lab">留言：</p>
+                <p class="yj-news-ly-txt">终于加入了中了中瑞工业园终于了中瑞工业园终于了中瑞工业园终于加入了中瑞工园终于加入了中瑞工业园终于加入了中瑞工业园</p>
+            </div>
+
+            <div class="yj-news-ly f-mb10">
+                <p> <span class="yj-news-ly-l">1</span><span>楼</span>&nbsp; &nbsp; <span class="yj-news-ly-name">曾**</span>&nbsp; &nbsp;  <span class="yj-news-ly-from">湖南</span>  </p>
+                <p class="yj-news-ly-lab">留言：</p>
+                <p class="yj-news-ly-txt">终于加入了中了中瑞工业园终于了中瑞工业园终于了中瑞工业园终于加入了中瑞工园终于加入了中瑞工业园终于加入了中瑞工业园</p>
+            </div>
+
+            <a class="yj-news-ly-write">我要留言</a>
+        </div>
+    </div>
+
+    <div class="g-w33 f-fl mc-hide">
+        <div class="yj-news-box-head">
+            <p class="yj-news-box-title">问卷调查</p>
+            <a href="#"><p class="yj-news-box-more">&gt;</p></a>
+        </div>
+
+        <div class="yj-wj">
+            <div class="yj-wj-lable-bottom"><p class="yj-wj-lable"></p><p class="yj-wj-number">问卷1</p></div>
+            <p class="yj-wj-question">产业链知多少？</p>
+        </div>
+        <div class="yj-wj">
+            <div class="yj-wj-lable-bottom"><p class="yj-wj-lable"></p><p class="yj-wj-number">问卷2</p></div>
+            <p class="yj-wj-question">产业链知多少？</p>
+        </div>
+        <div class="yj-wj">
+            <div class="yj-wj-lable-bottom"><p class="yj-wj-lable"></p><p class="yj-wj-number">问卷3</p></div>
+            <p class="yj-wj-question">产业链知多少？</p>
+        </div>
+        <div class="yj-wj">
+            <div class="yj-wj-lable-bottom"><p class="yj-wj-lable"></p><p class="yj-wj-number">问卷4</p></div>
+            <p class="yj-wj-question">产业链知多少？</p>
+        </div>
+        <div class="yj-wj">
+        <div class="yj-wj-lable-bottom"><p class="yj-wj-lable"></p><p class="yj-wj-number">问卷5</p></div>
+        <p class="yj-wj-question">产业链知多少？</p>
+    </div>
+        <div class="yj-wj">
+            <div class="yj-wj-lable-bottom"><p class="yj-wj-lable"></p><p class="yj-wj-number">问卷6</p></div>
+            <p class="yj-wj-question">产业链知多少？</p>
+        </div>
+        <div class="yj-wj">
+            <div class="yj-wj-lable-bottom"><p class="yj-wj-lable"></p><p class="yj-wj-number">问卷7</p></div>
+            <p class="yj-wj-question">产业链知多少？</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="map mc-hide" id="map"></div>
+
+<div class="footer">
+    <div class="w-main f-bc f-cb f-tac">
+        <a href="#">翠亨新区官网</a><p class="footer-l">|</p>
+        <a href="#">中山市商务局</a><p class="footer-l">|</p>
+        <a href="#">中山市外事侨务局</a><p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a><p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a><p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a><p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+        <p>@Copyright ©2013-2020 Sino-Swiss（European） Industrial Park Registration.</p>
+    </div>
+</div>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=iaAHZADBdAy7aoRVdPXbrDdF"></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(113.45146,22.565916),18);
+    }
+    function setMapEvent(){
+        map.enableScrollWheelZoom();
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+        target.addEventListener("click",function(){
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay(){
+        var markers = [
+            {content:"丝丝姆纺织机械公司",title:"火炬开发区火炬大道17号	",imageOffset: {width:0,height:3},position:{lat:22.566108,lng:113.451793}}
+        ];
+        for(var index = 0; index < markers.length; index++ ){
+            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+            })});
+            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+            marker.setLabel(label);
+            addClickHandler(marker,infoWindow);
+            map.addOverlay(marker);
+        };
+    }
+    //向地图添加控件
+    function addMapControl(){
+        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+</script>
+
+
+
+
+</body>
+</html>

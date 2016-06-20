@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Mcode</title>
+    <meta name="renderer" content="webkit">
+    <!-- Mcode自适应辅助代码，不用可删除，见：http://code.wiredmed.com/show.php?id=19&url=http://code.wiredmed.com/code/common/base/2016-04-08/19.html -->
+    <script>(function () {
+        function a() {
+            return /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) ? !0 : /(Android)/i.test(navigator.userAgent) ? !0 : !1
+        }
+
+        var d = document.getElementsByTagName("html")[0];
+        var e;
+        if (a()) {
+            window.isMobile = 1;
+            e = "MC"
+        } else {
+            window.isMobile = 0;
+            e = "PC"
+        }
+        d.className = d.className ? d.className + " " + e : e;
+        var b = d.className;
+
+        function c(f) {
+            var h = "";
+            var g = document.documentElement.clientWidth;
+            1600 > g && (h += " lt1600");
+            1400 > g && (h += " lt1400");
+            1200 > g && (h += " lt1200");
+            1000 > g && (h += " lt1000");
+            960 > g && (h += " lt960");
+            640 > g && (h += " lt640");
+            500 > g && (h += " lt500");
+            400 > g && (h += " lt400");
+            1600 < g && (h += " gt1600");
+            1400 < g && (h += " gt1400");
+            1200 < g && (h += " gt1200");
+            1000 < g && (h += " gt1000");
+            960 < g && (h += " gt960");
+            640 < g && (h += " gt640");
+            500 < g && (h += " gt500");
+            400 < g && (h += " gt400");
+            f.className = b + h
+        }
+
+        c(d);
+        window.onresize = function (f) {
+            c(d)
+        }
+    })();</script>
+    <!--让IE9以下浏览器支持html5标签 -->
+    <!--[if lt IE 9]>
+    <script> (function () {
+        if (!/*@cc_on!@*/0)return;
+        var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','), i = e.length;
+        while (i--) {
+            document.createElement(e[i])
+        }
+    })() </script>
+    <![endif]-->
+    <!-- Mcode基础及扩展样式集合，正式使用应下载到本地 -->
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" href="css/extend.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="css/swiper2.7.6.min.css" rel="stylesheet">
+    <script src="js/jquery1.12.1.js"></script>
+    <script src="js/swiper2.7.6.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#box1').swiper({
+                loop: true, paginationClickable: true,
+                pagination: '#box1 .mj-pagination'
+                //其他设置
+            });
+        })
+    </script>
+</head>
+<body>
+<!--移动菜单-->
+<div class="yj-moblie pc-hide">
+    <i class="f-icon m-search">&#xe618;</i>
+    <i class="f-icon m-menu">&#xe614;</i>
+</div>
+
+<header>
+    <div class="yj-top mc-hide">
+        <div class="w-main f-bc f-cb">
+            <div class="f-fr">
+                <a class="yj-top-lang" href="#">中文</a>
+                <a class="yj-top-lang" href="#">Deutsch</a>
+                <a class="yj-top-lang" href="#">English</a>
+                <a class="yj-top-lang" href="#">française</a>
+                <a class="yj-top-lang" href="#">Italiano</a>
+                <a class="yj-top-lang-more" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-main f-bc f-cb f-mt10">
+        <div class="mj-logo g-w70 g-mw g-fl"><img src="img/logo.jpg" alt=""></div>
+        <div class="f-fr g-w30 g-mw mc-hide">
+            <div class="search-box">
+                <div class="f-cb mj-search-form f-f14">
+                    <form method="post" action="http://nysy.gzyuanri.com/core/search/index.php" >
+                        <input type="hidden" name="show" value="title">
+                        <input type="hidden" name="classid" value="8">
+                        <div class="g-w80 g-fl">
+                            <input title="" class="mj-search-form-input" placeholder="请输入关键字..." type="text" name="keyboard" />
+                        </div>
+                        <button type="submit" class="mj-search-form-btn g-fl g-w20">搜索</button>
+                    </form >
+                </div>
+                <p class="mj-search-hot f-f12 f-mt10"><b>热门搜索：</b><a href="#" target=_blank>医生</a><a href="#">烦人</a></p>
+            </div>
+        </div>
+    </div>
+    <nav class="mj-nav">
+        <div class="w-main f-bc f-cb">
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">关于我们</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">投资环境</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">新闻及活动</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">媒体库</a>
+            </div>
+
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">社会网络</a>
+            </div>
+
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">联系我们</a>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<div class="yj-pic-roll">
+    <div class="swiper-container mj-slideBox" id="box1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#" target="_blank" class="mj-slideBox-img"
+                   style="background:url(img/pic.jpg) center center no-repeat;">&nbsp;</a>
+            </div>
+            <div class="swiper-slide"> Slide2</div>
+            <div class="swiper-slide"> Slide3</div>
+        </div>
+        <div class="mj-pagination mj-slideBox-p2"></div>
+    </div>
+</div>
+
+<div class="yj-container">
+    <div class="w-main f-bc f-cb f-mt10">
+        <div class="yj-location">
+            <a href="http://nysy.gzyuanri.com/cn/">首页</a>-
+            <a href="#">医院概况</a>
+        </div>
+        <div class="g-w20 f-fl mc-hide">
+            <div class="yj-intro-guide">
+                <ul>
+                    <li class="yj-intro-zjyy">概况</li>
+                    <li id="left-18"><a href="#">介绍<span class="yj-intro-gt">&gt;</span></a></li>
+                    <li id="left-19"><a href="#">组织<span class="yj-intro-gt">&gt;</span></a></li>
+                    <li id="left-20"><a href="#">布局<span class="yj-intro-gt">&gt;</span></a></li>
+                    <li id="left-21"><a href="#">设备<span class="yj-intro-gt">&gt;</span></a></li>
+                    <li id="left-22" class="yj-intro-white yj-intro-blue"><a href="#">指引<span class="yj-intro-gt">&gt;</span></a></li>
+                    <li id="left-23"><a href="#">资质<span class="yj-intro-gt">&gt;</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="g-w80 f-fr g-mw">
+            <div class="f-m5">
+                <div class="yj-hospital-content">
+                    <p style="text-align: center;"><img src="http://nysy.gzyuanri.com/d/file/cn/yygk/jtzy/2016-05-23/7fefac3ec9bcc0eb38d1599fc2b0cb56.jpg" alt="" width="670" height="446"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="w-main f-bc f-cb f-tac">
+        <a href="#">翠亨新区官网</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">中山市商务局</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">中山市外事侨务局</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+
+        <p>@Copyright ©2013-2020 Sino-Swiss（European） Industrial Park Registration.</p>
+    </div>
+</div>
+
+</body>
+</html>

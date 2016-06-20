@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Mcode</title>
+    <meta name="renderer" content="webkit">
+    <!-- Mcode自适应辅助代码，不用可删除，见：http://code.wiredmed.com/show.php?id=19&url=http://code.wiredmed.com/code/common/base/2016-04-08/19.html -->
+    <script>(function () {
+        function a() {
+            return /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) ? !0 : /(Android)/i.test(navigator.userAgent) ? !0 : !1
+        }
+
+        var d = document.getElementsByTagName("html")[0];
+        var e;
+        if (a()) {
+            window.isMobile = 1;
+            e = "MC"
+        } else {
+            window.isMobile = 0;
+            e = "PC"
+        }
+        d.className = d.className ? d.className + " " + e : e;
+        var b = d.className;
+
+        function c(f) {
+            var h = "";
+            var g = document.documentElement.clientWidth;
+            1600 > g && (h += " lt1600");
+            1400 > g && (h += " lt1400");
+            1200 > g && (h += " lt1200");
+            1000 > g && (h += " lt1000");
+            960 > g && (h += " lt960");
+            640 > g && (h += " lt640");
+            500 > g && (h += " lt500");
+            400 > g && (h += " lt400");
+            1600 < g && (h += " gt1600");
+            1400 < g && (h += " gt1400");
+            1200 < g && (h += " gt1200");
+            1000 < g && (h += " gt1000");
+            960 < g && (h += " gt960");
+            640 < g && (h += " gt640");
+            500 < g && (h += " gt500");
+            400 < g && (h += " gt400");
+            f.className = b + h
+        }
+
+        c(d);
+        window.onresize = function (f) {
+            c(d)
+        }
+    })();</script>
+    <!--让IE9以下浏览器支持html5标签 -->
+    <!--[if lt IE 9]>
+    <script> (function () {
+        if (!/*@cc_on!@*/0)return;
+        var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','), i = e.length;
+        while (i--) {
+            document.createElement(e[i])
+        }
+    })() </script>
+    <![endif]-->
+    <!-- Mcode基础及扩展样式集合，正式使用应下载到本地 -->
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" href="css/extend.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="css/swiper2.7.6.min.css" rel="stylesheet">
+    <script src="js/jquery1.12.1.js"></script>
+    <script src="js/swiper2.7.6.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#box1').swiper({
+                loop: true, paginationClickable: true,
+                pagination: '#box1 .mj-pagination'
+                //其他设置
+            });
+        })
+    </script>
+</head>
+<body>
+<!--移动菜单-->
+<div class="yj-moblie pc-hide">
+    <i class="f-icon m-search">&#xe618;</i>
+    <i class="f-icon m-menu">&#xe614;</i>
+</div>
+
+<header>
+    <div class="yj-top mc-hide">
+        <div class="w-main f-bc f-cb">
+            <div class="f-fr">
+                <a class="yj-top-lang" href="#">中文</a>
+                <a class="yj-top-lang" href="#">Deutsch</a>
+                <a class="yj-top-lang" href="#">English</a>
+                <a class="yj-top-lang" href="#">française</a>
+                <a class="yj-top-lang" href="#">Italiano</a>
+                <a class="yj-top-lang-more" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-main f-bc f-cb f-mt10">
+        <div class="mj-logo g-w70 g-mw g-fl"><img src="img/logo.jpg" alt=""></div>
+        <div class="f-fr g-w30 g-mw mc-hide">
+            <div class="search-box">
+                <div class="f-cb mj-search-form f-f14">
+                    <form method="post" action="http://nysy.gzyuanri.com/core/search/index.php" >
+                        <input type="hidden" name="show" value="title">
+                        <input type="hidden" name="classid" value="8">
+                        <div class="g-w80 g-fl">
+                            <input title="" class="mj-search-form-input" placeholder="请输入关键字..." type="text" name="keyboard" />
+                        </div>
+                        <button type="submit" class="mj-search-form-btn g-fl g-w20">搜索</button>
+                    </form >
+                </div>
+                <p class="mj-search-hot f-f12 f-mt10"><b>热门搜索：</b><a href="#" target=_blank>医生</a><a href="#">烦人</a></p>
+            </div>
+        </div>
+    </div>
+    <nav class="mj-nav">
+        <div class="w-main f-bc f-cb">
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">关于我们</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">投资环境</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">新闻及活动</a>
+            </div>
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">媒体库</a>
+            </div>
+
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">社会网络</a>
+            </div>
+
+            <div class="mj-nav-a">
+                <a class="mj-nav-b" href="#">联系我们</a>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<div class="yj-pic-roll">
+    <div class="swiper-container mj-slideBox" id="box1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#" target="_blank" class="mj-slideBox-img"
+                   style="background:url(img/pic.jpg) center center no-repeat;">&nbsp;</a>
+            </div>
+            <div class="swiper-slide"> Slide2</div>
+            <div class="swiper-slide"> Slide3</div>
+        </div>
+        <div class="mj-pagination mj-slideBox-p2"></div>
+    </div>
+</div>
+
+<div class="w-main g-mw f-bc f-cb ">
+    <div class="f-p10">
+        <div class="g-w25 mc-hide g-fl">
+            <div class="f-p10">
+                <div class="mj-class-nav on">医院新闻</div>
+                <a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/" class="mj-class-nav">医院新闻</a><a
+                    href="http://nysy.gzyuanri.com/cn/xwgg/mtbd/" class="mj-class-nav">媒体报道</a><a
+                    href="http://nysy.gzyuanri.com/cn/xwgg/zxgg/" class="mj-class-nav">最新公告</a><a
+                    href="http://nysy.gzyuanri.com/cn/xwgg/spbd/" class="mj-class-nav">视频报道</a>
+
+                <div class="mj-hot-list">
+                    <div class="mj-hot-list-title">热点关注</div>
+                    <ul class="mj-hot-list-ul">
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2027.html" class="f-textof"
+                               title="综合党支部举行“两学一做”第一次专题学习会议"><i class="mj-hot-list-i">1</i>综合党支部举行“两学一做”第一次专题学习会议</a>
+                        </li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2502.html" class="f-textof"
+                               title="南医三院与羊城晚报携手举办健康大讲堂活动"><i class="mj-hot-list-i">2</i>南医三院与羊城晚报携手举办健康大讲堂活动</a></li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2032.html" class="f-textof"
+                               title="【南医青年】孟源：医路无悔"><i class="mj-hot-list-i">3</i>【南医青年】孟源：医路无悔</a></li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2513.html" class="f-textof"
+                               title="南医三院召开纪律教育学习月活动动员大会"><i class="mj-hot-list-i">4</i>南医三院召开纪律教育学习月活动动员大会</a></li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2512.html" class="f-textof"
+                               title="华南理工大学杨永强教授来院学术交流"><i class="mj-hot-list-i">5</i>华南理工大学杨永强教授来院学术交流</a></li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2154.html" class="f-textof"
+                               title="我院听取群众心声 解决员工住房问题"><i class="mj-hot-list-i">6</i>我院听取群众心声 解决员工住房问题</a></li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2035.html" class="f-textof"
+                               title="南医三院召开“两学一做”专题教育动员大会"><i class="mj-hot-list-i">7</i>南医三院召开“两学一做”专题教育动员大会</a></li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2033.html" class="f-textof"
+                               title="南医三院骨肿瘤科联合多学科切除巨大肉瘤"><i class="mj-hot-list-i">8</i>南医三院骨肿瘤科联合多学科切除巨大肉瘤</a></li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2030.html" class="f-textof"
+                               title="胸外科为患者施行完全单孔胸腔镜下肺癌根治术"><i class="mj-hot-list-i">9</i>胸外科为患者施行完全单孔胸腔镜下肺癌根治术</a>
+                        </li>
+                        <li><a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-05-30/2028.html" class="f-textof"
+                               title="胸外科成功为80岁的食管癌患者实施单孔胸腔镜下三切口食管癌根治术"><i class="mj-hot-list-i">10</i>胸外科成功为80岁的食管癌患者实施单孔胸腔镜下三切口食管癌根治术</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="g-w75 g-mw g-fl">
+            <div class="f-p10">
+                <div class="mj-classList-title f-pr f-mt5">
+                    <h2 class="mj-classList-title-h2">医院新闻<span class="mj-classList-title-p">LIST</span></h2>
+
+                    <div class="f-pa f-tr mj-classList-title-right">
+                        <a href="javascript:history.go(-1);" class="f-btn">返回</a>
+                    </div>
+                </div>
+                <div class="mj-classList-list">
+                    <ul>
+                        <li class="mj-classList-list-li">
+                            <a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-06-20/2672.html" target="_blank">乳腺癌患者保乳不是梦</a>
+                            <p class="mj-classList-list-info"><span class="mj-classList-list-span"><i class="f-icon">&#xe619;</i>发布时间：2016-06-17 11:18:29</span></p>
+                            <p class="mj-classList-list-p">近日，南医三院普外科收治一名24岁年轻乳腺癌女患者，因“发现右侧乳腺肿物5月余”入院，在病理确诊为癌后，患者及家属都深深地皱上了眉头，患者查询得知可能因此而失去一侧乳房后，不禁流下</p>
+                        </li>
+                        <li class="mj-classList-list-li">
+                            <a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-06-20/2673.html" target="_blank">内科第二党支部召开“两学一做”学习教育动员会</a>
+                            <p class="mj-classList-list-info"><span class="mj-classList-list-span"><i class="f-icon">&#xe619;</i>发布时间：2016-06-16 11:16:08</span></p>
+                            <p class="mj-classList-list-p">5月31日下午，内科第二党支部在内科楼四楼示教室召开支部党员大会，通报近期党务工作情况，并就支部“两学一做”学习教育活动进行动员和部署。此次会议传达了医院党委有关“两学一做”</p>
+                        </li>
+                        <li class="mj-classList-list-li">
+                            <a href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/2016-06-20/2674.html" target="_blank">眼科开展爱眼日义诊活动</a>
+                            <p class="mj-classList-list-info">
+                                <span class="mj-classList-list-span"><i class="f-icon">&#xe619;</i>发布时间：2016-06-14 11:17:22</span>
+                            </p>
+                            <p class="mj-classList-list-p"> 6月6日为全国爱眼日，南医三院眼科于当日上午在门诊大厅开展 “呵护眼睛，从小做起”的义诊活动。
+                                义诊期间，眼科医护人员免费为青少年进行眼病及近视筛查，为被视力困扰的孩子及其家长解</p>
+                        </li>
+                    </ul>
+                    <div class="pager f-p10"><a title="Total record">&nbsp;<b>559</b> </a>&nbsp;&nbsp;&nbsp;<b>1</b>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_2.html">2</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_3.html">3</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_4.html">4</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_5.html">5</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_6.html">6</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_7.html">7</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_8.html">8</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_9.html">9</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_10.html">10</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_2.html">下一页</a>&nbsp;<a
+                            href="http://nysy.gzyuanri.com/cn/xwgg/yyxw/index_38.html">尾页</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="w-main f-bc f-cb f-tac">
+        <a href="#">翠亨新区官网</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">中山市商务局</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">中山市外事侨务局</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+
+        <p class="footer-l">|</p>
+        <a href="#">翠亨新区官网</a>
+
+        <p>@Copyright ©2013-2020 Sino-Swiss（European） Industrial Park Registration.</p>
+    </div>
+</div>
+
+</body>
+</html>
